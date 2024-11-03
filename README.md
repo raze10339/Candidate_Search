@@ -12,6 +12,7 @@ The Candidate Search Application is a tool designed for employers and recruiters
 - Local Data Persistence: Uses local storage to persist saved candidates across sessions.
 
 ## deployed application
+https://candidate-search-vurz.onrender.com
 
 
 
