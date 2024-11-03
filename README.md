@@ -4,6 +4,20 @@
 The Candidate Search Application is a tool designed for employers and recruiters to browse, shortlist, and manage potential candidates fetched from the GitHub API. The application displays candidate information in an easy-to-navigate interface, allowing users to save or reject candidates and view their saved selections.
 
 ## Features
+- Candidate Search: Fetches and displays candidates from the GitHub API.
+- Detailed Candidate Profile: Shows essential information like avatar, name, location, email, and bio.
+- Save/Reject Functionality: Allows recruiters to save preferred candidates or skip them.
+- Saved Candidates List: Displays saved candidates in a table format with easy access to each profile.
+- Responsive Design: Optimized for different screen sizes, including mobile and desktop.
+- Local Data Persistence: Uses local storage to persist saved candidates across sessions.
+
+## deployed application
+
+
+
+## The URL of the GitHub repository 
+https://github.com/raze10339/Candidate_Search.git
+
 
 
 
