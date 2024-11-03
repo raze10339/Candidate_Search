@@ -19,9 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/SavedCandidates',
-        element: <SavedCandidates savedCandidates={[]} onReject={function (): void {
-          throw new Error('Function not implemented.');
-        } } />,
+        element: <SavedCandidates />,
       },
     ],
   },
