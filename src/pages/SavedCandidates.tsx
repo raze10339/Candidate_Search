@@ -23,7 +23,7 @@ const SavedCandidates = () => {
           id: 1,
           login: 'ee1110',
           name: 'Ee1110',
-          avatar_url: 'https://via.placeholder.com/50',
+          avatar_url: 'https://randomuser.me/api/portraits/women/2.jpg',
           location: 'Tokyo, Japan',
           email: 'ee110@gmail.com',
           company: 'Microsoft',
@@ -33,7 +33,7 @@ const SavedCandidates = () => {
           id: 2,
           login: 'storkme',
           name: 'Alex Storkey',
-          avatar_url: 'https://via.placeholder.com/50',
+          avatar_url: 'https://randomuser.me/api/portraits/men/1.jpg',
           location: 'England',
           email: 'stork@not.gd',
           company: '40AU',
@@ -43,7 +43,7 @@ const SavedCandidates = () => {
           id: 3,
           login: 'queSaraSara',
           name: 'sarahCodes',
-          avatar_url: 'https://via.placeholder.com/50',
+          avatar_url: 'https://randomuser.me/api/portraits/women/1.jpg',
           location: 'Austin, TX',
           email: 'sarah.dev@gmail.com',
           company: 'sarahCodes',
@@ -53,7 +53,7 @@ const SavedCandidates = () => {
           id: 4,
           login: 'marcus-santos-dev',
           name: 'mr.coder',
-          avatar_url: 'https://via.placeholder.com/50',
+          avatar_url: 'https://randomuser.me/api/portraits/men/2.jpg',
           location: 'Salvador, Bahia',
           email: 'marcus.santosnet@gmail.com',
           company: 'mr.coder',
@@ -61,6 +61,7 @@ const SavedCandidates = () => {
         },
       ];
       setCandidates(savedCandidates);
+      
     };
 
     fetchCandidates();
@@ -90,7 +91,7 @@ const SavedCandidates = () => {
           {candidates.map((candidate) => (
             <tr key={candidate.id} style={{ backgroundColor: '#333', color: '#FFFFFF', textAlign: 'center' }}>
               <td style={tableCellStyle}>
-                <img src={candidate.avatar_url} alt={candidate.login} width={50} style={{ borderRadius: '50%' }} />
+                <img src={candidate?.avatar_url} alt={candidate?.login} width={50} style={{ borderRadius: '50%' }} />
               </td>
               <td style={tableCellStyle}>
                 {candidate.name} (<i>{candidate.login}</i>)
@@ -113,6 +114,10 @@ const SavedCandidates = () => {
                     height: '30px',
                     fontSize: '20px',
                     cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    lineHeight: '1'
                   }}
                 >
                   -
